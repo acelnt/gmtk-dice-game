@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/font/Roboto/Roboto-Black.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Menu.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 23.0
+margin_top = 29.0
+margin_right = 285.0
+margin_bottom = 224.0
+custom_colors/font_color = Color( 0.0313726, 0.0941176, 0.12549, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Press space to start
+
+Circle follows your mouse
+Dice will bounce off the circle and
+increase in value when they do
+Get dice in the correct place to gain 
+points and increase health
+If they fall down, you lose health
+"
+align = 1
